@@ -1,0 +1,16 @@
+.disclaimer {
+  background-color: inherit;
+  font-size: 0.6875em;
+  margin-bottom: 0;
+  margin-top: 1.5em;
+  color: $text-primary-color-light;
+}
+
+@media screen and (min-width: 48em) {
+  .disclaimer {
+    text-align: right;
+    br {
+      display: none;
+    }
+  }
+}

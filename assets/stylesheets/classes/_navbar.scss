@@ -1,0 +1,53 @@
+.navbar {
+  background-color: $footer-background;
+  color: inherit;
+  display: none;
+  font-size: 1.2em;
+  text-align: center;
+  @include majallab();
+  .wrapper {
+    width: 100%;
+  }
+  ul {
+    margin: 0;
+    padding-left: 0;
+  }
+  li {
+    padding: 0.5em 0;
+  }
+  a,
+  a:link,
+  a:visited {
+    color: $text-primary-color-light;
+    background-color: inherit;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .navbar {
+    background-color: white;
+    display: block;
+    font-size: 1.125em;
+    .wrapper {
+      width: 90%;
+    }
+    li {
+      display: inline-block;
+      width: 13%;
+    }
+    a,
+    a:link,
+    a:visited {
+      color: $text-primary-color-dark;
+      -webkit-transition: ease all 0.5s;
+      transition: ease all 0.5s;
+      @include majalla();
+      &:hover {
+        color: $color-accent;
+        background-color: inherit;
+      }
+    }
+  }
+}

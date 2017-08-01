@@ -1,0 +1,26 @@
+.social-networks {
+  margin: 0;
+  padding-left: 0;
+  li {
+    background-color: $color-accent;
+    border-radius: 50%;
+    color: inherit;
+    display: inline-block;
+    margin: 0 0.1em;
+    padding: 0.3em 0;
+    width: 2.1875em;
+    .fa {
+      background-color: inherit;
+      color: black;
+    }
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .social-networks {
+    overflow: auto;
+    li {
+      float: right;
+    }
+  }
+}

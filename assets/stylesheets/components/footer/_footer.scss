@@ -1,0 +1,20 @@
+#main-footer {
+  background-color: $footer-background;
+  border-top: 15px solid $color-accent;
+  color: inherit;
+  text-align: center;
+  .wrapper {
+    padding-bottom: 1em;
+    padding-top: 2em;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  #main-footer section {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+  }
+}
+
+@import "where-are-we-located";

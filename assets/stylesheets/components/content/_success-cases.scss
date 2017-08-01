@@ -1,0 +1,17 @@
+#success-cases {
+  .content {
+    font-size: 0.75em;
+    text-align: center;
+  }
+  blockquote footer {
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  #success-cases {
+    .content {
+      text-align: left;
+    }
+  }
+}

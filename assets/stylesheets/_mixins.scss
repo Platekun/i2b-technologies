@@ -1,0 +1,32 @@
+@mixin center-vertical() {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin center() {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@mixin quote() {
+  background-color: inherit;
+  color: $quote-color;
+  display: inline-block;
+  font-size: 7em;
+  text-align: center;
+  width: 10%;
+  @include center-vertical();
+}
+
+@mixin majalla() {
+  font-family: "Majalla", "Times New Roman", sans-serif;
+}
+
+@mixin majallab() {
+  font-family: "Majalla Bold", "Times New Roman", sans-serif;
+}

@@ -1,0 +1,17 @@
+#reason {
+  span {
+    font-weight: bold;
+  }
+  .content {
+    font-size: 0.75em;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  #reason {
+    .content {
+      text-align: left;
+    }
+  }
+}

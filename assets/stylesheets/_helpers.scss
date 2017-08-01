@@ -1,0 +1,14 @@
+.wrapper {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.hideable {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .hideable {
+    display: block;
+  }
+}

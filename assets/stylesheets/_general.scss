@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Majalla";
+  src: url("../fonts/majalla.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Majalla Bold";
+  src: url("../fonts/majallab.ttf") format('truetype');
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#main-header,
+section,
+#main-footer {
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
+main section h2 {
+  @include majallab();
+  background-color: inherit;
+  color: $text-secondary-color;
+  font-size: 1.875em;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
+
+svg {
+  height: 25.5px;
+  width: 40.75px;
+}

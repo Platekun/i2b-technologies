@@ -1,0 +1,42 @@
+.menu-toggler {
+  background-color: $faded-gray;
+  color: white;
+  display: inline-block;
+  padding: 0.3em 0.5em;
+  position: absolute;
+  right: 0;
+  vertical-align: top;
+  width: 8em;
+  button {
+    background-color: $faded-gray;
+    border: none;
+    color: inherit;
+    font-size: 1.875em;
+    text-align: left;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: inherit;
+    @include majalla();
+  }
+  span {
+    background-image: url("../images/caret.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+    height: 15px;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 22px;
+    z-index: 2;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .menu-toggler {
+    display: none;
+  }
+}

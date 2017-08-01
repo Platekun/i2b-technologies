@@ -1,0 +1,35 @@
+.quote-container {
+  position: relative;
+  .quote {
+    margin: 0 auto;
+    width: 76%;
+    &:before {
+      content: "“";
+      left: -20px;
+      @include quote();
+    }
+    &:after {
+      content: "”";
+      right: -20px;
+      vertical-align: top;
+      @include quote();
+    }
+  }
+  .author {
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .quote-container {
+    .quote {
+      width: 100%;
+      &:before {
+        left: -1em;
+      }
+      &:after {
+        right: -1em;
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+.services {
+  padding-left: 0;
+  text-align: center;
+  .service {
+    background-color: $our-work;
+    border-radius: 50%;
+    color: inherit;
+    display: block;
+    height: 7.125em;
+    margin: 1em auto;
+    position: relative;
+    -webkit-transition: ease all 0.5s;
+    transition: ease all 0.5s;
+    width: 7.1875em;
+    &:hover {
+      background-color: inherit;
+      color: $text-primary-color-light;
+    }
+    &:first-child:hover {
+      background-color: $our-work-red;
+      color: $text-primary-color-light;
+    }
+    &:nth-child(2):hover {
+      background-color: $our-work-yellow;
+      color: $text-primary-color-light;
+    }
+    &:nth-child(3):hover {
+      background-color: $our-work-blue;
+      color: $text-primary-color-light;
+    }
+    &:nth-child(4):hover {
+      background-color: $our-work-green;
+      color: $text-primary-color-light;
+    }
+    &:last-child:hover {
+      background-color: $our-work-light-blue;
+      color: $text-primary-color-light;
+    }
+    p {
+      display: none;
+    }
+    .service-thumbnail {
+      @include center();
+      h3 {
+        font-size: 0.75em;
+      }
+    }
+    .service-icon {
+      fill: $color-accent;
+      text-align: center;
+      -webkit-transition: ease all 0.5s;
+      transition: ease all 0.5s;
+    }
+    &:hover .service-icon {
+      fill: $text-primary-color-light;
+    }
+  }
+}
+
+@media screen and (min-width: 55.8125em) {
+  .services {
+    .service {
+      display: inline-block;
+      &:not(:last-child):after {
+        background-color: white;
+        border-radius: 50%;
+        color: $faded-gray;
+        content: ">";
+        font-weight: bold;
+        padding: 0.1em 0.45em;
+        position: absolute;
+        right: -0.7em;
+        z-index: 10;
+        @include center-vertical();
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 75.625em) {
+  .services {
+    .service {
+      height: 9.8125em;
+      width: 9.8125em;
+      p {
+        display: block;
+        font-size: 0.6875em;
+        padding: 0 1em;
+      }
+      .service-thumbnail {
+        display: block;
+        margin-top: 1.5em;
+        position: static;
+        -webkit-transform: none;
+        transform: none;
+        h3 {
+          font-size: 0.875em;
+          margin-top: 0.5em;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

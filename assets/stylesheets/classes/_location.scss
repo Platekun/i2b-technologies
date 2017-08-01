@@ -1,0 +1,49 @@
+.location {
+  background-color: inherit;
+  /**/
+  color: $text-primary-color-light;
+  &:last-child {
+    margin-top: 1.6em;
+  }
+  .phone-number {
+    background-color: inherit;
+    /**/
+    color: $text-primary-color-light;
+    font-weight: bold;
+  }
+  .email {
+    background-color: inherit;
+    color: $color-accent;
+  }
+  address {
+    font-size: 0.6875em;
+  }
+  h3,
+  p {
+    margin: 0;
+  }
+  h3,
+  .phone-number,
+  .email {
+    font-size: 0.875em;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .location {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    width: 49%;
+    &:last-child {
+      margin-top: 0;
+    }
+    .email {
+      display: none;
+    }
+    h3,
+    .phone-number {
+      font-size: 1em;
+    }
+  }
+}

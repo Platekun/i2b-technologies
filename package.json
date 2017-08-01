@@ -1,0 +1,14 @@
+{
+  "name": "green-tech",
+  "version": "1.0.0",
+  "description": "Intelligence to business",
+  "scripts": {
+    "sass": "sass --watch ./assets/stylesheets/index.scss:./assets/stylesheets/index.css"
+  },
+  "author": "Carlos Camilo Lobo",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Platekun/i2b-technologies.git"
+  }
+}
